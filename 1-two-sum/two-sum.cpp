@@ -4,9 +4,8 @@ public:
         vector<int> ans;
        for(int j = 0;j<nums.size()-1;j++){
             for(int i=j+1;i<nums.size();i++){
-                int sum =0;
-                sum = nums[j]+nums[i];
-                if( sum == target){
+                
+                if( nums[j]+nums[i] == target){
                     ans.push_back(j);
                     ans.push_back(i);
                    
